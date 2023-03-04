@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/RED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Yellow"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/Kn1"
+        android:onClick="onRedButtonClick"
+        android:text="Red"
+        android:textColor="@color/R"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Button
+        android:id="@+id/Yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/GREEN"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/Kn1"
+        android:onClick="onYellowButtonClick"
+        android:text="Yellow"
+        android:textColor="@color/Y"
+        app:layout_constraintBottom_toTopOf="@+id/GREEN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RED" />
+
+    <Button
+        android:id="@+id/GREEN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/Kn1"
+        android:onClick="onGreenButtonClick"
+        android:text="GREEN"
+        android:textColor="@color/G"
+        app:layout_constraintEnd_toEndOf="@id/Yellow"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="478dp" />
+
+</RelativeLayout>
